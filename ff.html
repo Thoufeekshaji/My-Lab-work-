@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+</head>
+<body>
+<form action="action tag.html">
+<label>NAME</label>
+<input type="text" id="name" name="name" placeholder="Enter your name" required maxlength="25"><br><br>
+<label>EMAIL</label>
+<input type="text" id="email" name="email" value="test@example.com" autofocus><br><br>
+<label>Password</label>
+<input type="Password" id="Password" name="Password" minlength="6" required><br><br>
+<label>CATEGORY</label>
+<select id="select" name="select">
+<option value="student">STUDENT</option>
+<option value="employee">EMPLOYEE</option>
+<option value="freelancer" selected>FREELANCER</option>
+</select><br><br>
+<label>EVENT DATE</label>
+<input type="date" id="date" name="date" required><br><br>
+<label>TICKETS</label><br>
+<input type="radio" id="radio" name="radio">1Ticket<br>
+<input type="radio" id="radio" name="radio" checked>2Ticket<br>
+<input type="radio" id="radio" name="radio">3Ticket<br><br>
+<label>PAYMENT</label>
+<input type="checkbox" id="payment" name="payment">Online payment<br><br>
+<label>NOTES</label><br>
+ <textarea id="notes" name="notes" placeholder="Type here"></textarea><br><br>
+ <button>SUBMIT</button>
+</form>
+</body>
+</html>
