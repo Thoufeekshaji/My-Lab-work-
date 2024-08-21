@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>Form</title>
+</head>
 <body>
-<form action="/action_page.php">
-  <label>Name:</label>
-  <input type="text" id="name" name="name" placeholder="Enter your name" required maxlength="25"><br><br>
-
-  <label>Email:</label>
-  <input type="text" id="email" name="email" value="test@example.com" required autofocus><br><br>
-
-  <label>Password:</label>
-  <input type="password" name="password" placeholder="Enter your password" minlength="6" required><br><br>
-
-  <label>Category</label><br>
-  <select id="Category" name="Category" required>
-    <option value="Student">Student</option>
-    <option value="Employee">Employee</option>
-    <option value="Freelancer" selected>Freelancer</option>
-  </select><br><br>
-
-  <label for="date">Event date:</label><br>
-  <input type="date" name="event-date" id="event-date" required><br><br>
-
-  <label>Tickets</label><br>
-  <input type="radio" name="button" id="ticket-1">1 ticket<br>
-  <input type="radio" name="button" id="ticket-2" checked>2 ticket<br>
-  <input type="radio" name="button" id="ticket-3">3 ticket<br><br>
-  <label>Payment</label><br>
-  <input type="checkbox" id="payment" required>Online payment<br><br>
-
-  <label>Notes</label><br>
-  <textarea id="notes" name="Notes" placeholder="Type here"></textarea><br>
-  <button>Submit</button>
+<form action="action tag.html">
+<label>NAME</label>
+<input type="text" id="name" name="name" placeholder="Enter your name" required maxlength="25"><br><br>
+<label>EMAIL</label>
+<input type="text" id="email" name="email" value="test@example.com" autofocus><br><br>
+<label>Password</label>
+<input type="Password" id="Password" name="Password" minlength="6" required><br><br>
+<label>CATEGORY</label>
+<select id="select" name="select">
+<option value="student">STUDENT</option>
+<option value="employee">EMPLOYEE</option>
+<option value="freelancer" selected>FREELANCER</option>
+</select><br><br>
+<label>EVENT DATE</label>
+<input type="date" id="date" name="date" required><br><br>
+<label>TICKETS</label><br>
+<input type="radio" id="radio" name="radio">1Ticket<br>
+<input type="radio" id="radio" name="radio" checked>2Ticket<br>
+<input type="radio" id="radio" name="radio">3Ticket<br><br>
+<label>PAYMENT</label>
+<input type="checkbox" id="payment" name="payment">Online payment<br><br>
+<label>NOTES</label><br>
+ <textarea id="notes" name="notes" placeholder="Type here"></textarea><br><br>
+ <button>SUBMIT</button>
 </form>
 </body>
 </html>
