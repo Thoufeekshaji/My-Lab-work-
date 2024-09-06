@@ -1,0 +1,166 @@
+<!DOCTYPE html5>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB4</title>
+   <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+
+}
+p {font-size: 25px}
+
+.table-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#search {
+    margin: 2em;
+    padding: 3px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.customer-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 70px;
+    padding: 50%;
+}
+.customer-table th,
+.customer-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.view-icon::before {
+    content: "\1F441"; 
+}
+.edit-icon::before {
+    content: "\270E";
+}
+.delete-icon::before {
+    content: "\1F5D1";
+}
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+    .button .a,.b,.c,.d{
+        border-radius: 50%;
+    }
+    button.active {
+            background-color: #00f;
+            border-radius: 50%;
+    }
+   </style>
+</head>
+<body>
+    <fieldset>
+
+     <div class="table-controls">
+    <label for="entries">Show
+    <select id="entries">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option> 
+                </select>
+                entries
+            </label>
+            <p>Coustomer <b>Details</b></p>
+            <input type="text" id="search" placeholder="search">
+        </div>
+        <table class="customer-table">
+            
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th style="scroll-margin-block-end: 2px;">City</th>
+                    <th>Pincode</th>
+                    <th>Country</th>
+                    <th>Actions</th>
+                </tr>
+            
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Thomas Hardy</td>
+                    <td>89 Chiarcso Rd.</td>
+                    <td>Portland</td>
+                    <td>91219</td>
+                    <td>USA</td>
+                    <td>
+                        <a href="#"><span class="view-icon"></span></a>
+                        <a href="#"><span class="edit-icon"></span></a>
+                        <a href="#"><span class="delete-icon"></span></a>
+                    </td>
+                </tr>
+                    <tr>
+                <td>2</td>
+                <td>Maria Anders</td>
+                <td>Obere Str.57</td>
+                <td>Berlin</td>
+                <td>12209</td>
+                <td>Germany</td>
+                <td>
+                        <a href="#"><span class="view-icon"></span></a>
+                        <a href="#"><span class="edit-icon"></span></a>
+                        <a href="#"><span class="delete-icon"></span></a>
+                    </td>
+
+                </tr>
+                 <tr>
+                <td>3</td>
+                <td>Fran Wilson</td>
+                <td>C/Araquil,67</td>
+                <td>Madrid</td>
+                <td>28023</td>
+                <td>Spain</td>
+                <td><a href="#"><span class="view-icon"></span></a>
+                        <a href="#"><span class="edit-icon"></span></a>
+                        <a href="#"><span class="delete-icon"></span></a></td>
+            </tr>
+             <tr>
+                <td>4</td>
+                <td>Dominic Perrier</td>
+                <td>25,rue Lauriston</td>
+                <td>Paris</td>
+                <td>75016</td>
+                <td>France</td>
+                <td><a href="#"><span class="view-icon"></span></a>
+                        <a href="#"><span class="edit-icon"></span></a>
+                        <a href="#"><span class="delete-icon"></span></a></td>
+            </tr>
+            <tr>    <td>5</td>
+                <td>Marin Blank</td>
+                <td>Via Monteblanco 34</td>
+                <td>Turin</td>
+                <td>10100</td>
+                <td>Italy</td>
+                  <td><a href="#"><span class="view-icon"></span></a>
+                        <a href="#"><span class="edit-icon"></span></a>
+                        <a href="#"><span class="delete-icon"></span></a></td>
+            </tr>
+               
+            </tbody>
+        </table>
+        <div class="button">
+            <span>Showing 5 out of 25 entries</span>
+            <div class="page-controls">
+              <button class="prv">Previous</button>
+                <button class="a">1</a>
+                <button class="b">2</button>
+                <button class="active">3</button>
+                <button class="c">4</button>
+               <button class="d">5</button>
+            </div>
+        </div>
+    </div>
+</fieldset>
+</body>
+</html>

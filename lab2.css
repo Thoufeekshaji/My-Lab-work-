@@ -1,0 +1,25 @@
+<style>
+	body{
+		background-color:#F0F0F2 ;
+		font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}	
+	div
+	{
+		width: 600px;
+		margin: 5em auto;
+		padding: 2.5em;
+		background-color: #fdfdff;
+		border-radius: 0.5em;
+		box-shadow: 2px 3px 7px 3px rgba(0, 0, 0, 0.1);
+	}	
+	h1{
+	font-weight: bolder;
+	}
+	p{
+		padding: 2em auto;
+	}
+	a{
+	text-decoration: none;
+	}
+
+    </style>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Lab 5</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Roboto';
+            font-weight: lighter;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            height: 100vh;
+        }
+        .left{
+            background-color: rgb(21, 26, 34);
+
+        }
+        .right{
+            background-color: rgb(0, 168, 118);
+        }
+        .left-box{
+            padding: 50px 50px;
+            color: azure;
+        }
+        .welcome{
+            position: relative;
+            top: 150px;
+        }
+        h1{
+            font-weight: 300;
+            font-size: xx-large;
+        }
+        h3{
+            font-weight: 200;
+            margin-top: 10px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: x-large;
+
+        }
+        p{
+            position: relative;
+            top: 200px;
+            width: 700px;
+            color: rgba(255, 255, 255, 0.5);
+            line-height: 1.4;
+
+        }
+        .btn1{
+            position: relative;
+            top: 250px;
+            padding: 16px 20px;
+            background-color: rgb(0, 168, 118);
+            border-radius: 3px;
+            border-width: 0;
+            color: azure;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        .btn1:hover{
+            cursor: pointer;
+        }
+        nav{
+            position: relative;
+            top: 370px;
+            align-items: center;
+            margin-left: 0px;
+        }
+        .bot{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+        li{
+            margin: 10px 10px 14px 0px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        li:hover{
+            cursor: pointer;
+        }
+        .right_box{
+            position: relative;
+            top: 200px;
+            display: flex;
+            padding: 50px 50px;
+            color: azure;
+            
+        }
+        .log{
+            position: relative;
+            font-size: x-large;
+        }
+        .right_box input {
+            width: 85%;
+            padding: 15px 15px 15px 2px;
+            margin-bottom: 20px;
+            background-color: transparent;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            color: azure;
+            font-size: 1em;
+        }
+        .email{
+            margin-top: 20px;
+        }
+        .right_box button {
+            width: 25%;
+            margin-top: 10px;
+            padding: 15px;
+            background-color: white;
+            color: rgb(0, 168, 118);
+            border: none;
+            border-radius: 3px;
+            font-size: 1em;
+            font-weight: 600;
+        }
+        .right_box button:hover{
+            cursor: pointer;
+        }
+        .right_box a{
+            width: 50%;
+            text-decoration: none;
+            color: azure;
+            padding-left: 5%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="left">
+        <div class="left-box">
+    <img src="https://cosy.erc.edu/assets/my-erc/img/logo-white.png" width="120px" height="auto">
+    <div class="welcome">
+        <h1>Welcome</h1>
+        <h3>Register for an ERC account here.</h3>
+    </div>
+
+    <p>Register for a free ERC account here and get access to get access to the webshop academy and MyERC membership portal.yegfug iuhciwre
+         neklnvn neovnksdlcv jnlodnccknn ncjk onconk jknscnkjnck kjnjndc k kjdnsckjnck k jndscjnskjc cnoanck janckjn doknldkn km kjdncon kjnakcjnka ckjanckjnsdkc kjs cnkjn kkcjndjcknsdkcn ckjsncdjncok</p>
+    </p>
+    <button class="btn1">REGISTER HERE</button>
+    <nav>
+        <ul class="bot">
+            <li>CHOOSE LANGUAGE</li>
+            <li>HELP CENTER</li>
+            <li>ERC WEBSITE</li>
+            <li>ERC WEBSHOP</li>
+        </ul>
+    </nav>
+    </div>
+    </div>
+    <div class="right">
+    <div class="right_box">
+    <form>
+        <label class="log">Or login to your account</label>
+            <input type="text" class="email" placeholder="Your email">
+            <input type="password" class="password" placeholder="Password">
+            <button class="btn2">LOGIN</button>
+            <a href="#">Forgot password?</a>
+    </form>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
